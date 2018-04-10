@@ -44,7 +44,7 @@ strong { font-weight: 700; }
 	color: #444;
 }
 
-img.garyb { width: 100%; height: auto; margin-bottom: 20px; }
+img.garyb { width: 165px; height: auto; margin: 0 auto 20px auto; }
 
 .aligncenter { margin: 0 auto; display: block; }
 .alignright { float: right; }

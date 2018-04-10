@@ -49,7 +49,7 @@ window['_fs_namespace'] = 'FS';
 		<h1><a href="<?php bloginfo('url'); ?>" class="title-main bacon-shadow">Gary Bacon</a></h1>
 
 		<div class="bacon-nav bacon-shadow">
-			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/garybacon.jpg" alt="<?php bloginfo('name'); ?>" class="garyb"></a>
+			<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/gary_bacon_pixel.png" alt="<?php bloginfo('name'); ?>" class="garyb"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
 		</div>
 		
