@@ -56,6 +56,8 @@ img.garyb { width: 100%; height: auto; margin-bottom: 20px; }
 
 h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 
+.menu-about-the-bacon-container .current-menu-item a { font-weight: 700; color: #B21A13; }
+
 /* Search Formatting */
 
 .bacon-search {
