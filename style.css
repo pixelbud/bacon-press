@@ -44,7 +44,7 @@ strong { font-weight: 700; }
 	color: #444;
 }
 
-img.garyb { width: 165px; height: auto; margin: 0 auto 20px auto; }
+.garyb { display: block; width: auto; height: auto; margin: 0 auto 20px auto; }
 
 .aligncenter { margin: 0 auto; display: block; }
 .alignright { float: right; }
@@ -361,6 +361,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	width: 100%;
 	text-decoration: none;
 	text-align: center;
+	display: none;
 }
 
 
@@ -825,8 +826,7 @@ div.comment-bacon {
 
 @media screen and (max-width: 639px) {
 	body { margin: 0; }
-	
-	img.garyb { display:none; }	
+		
 	.dash-left { max-width: none; }
 	.dash-nav { margin: 0 10px 10px 10px; }
 	.dash-main { max-width: none; }
@@ -853,6 +853,12 @@ div.comment-bacon {
 	flex-direction: column;
 	align-items: center;
 	}
+
+	.title-main {
+		display: block;
+	}
+	
+	.bacon-social-box { display: none; }
 }
 
 @media screen and (max-width: 375px) {
@@ -866,4 +872,6 @@ div.comment-bacon {
 	.bacon-blog-post h2 {
 		font-size: 1.9em;
 	}
+	
+	.garyb { max-width: 320px; width: 100%; }
 }
