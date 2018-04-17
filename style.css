@@ -51,7 +51,7 @@ strong { font-weight: 700; }
 .alignleft { float: left; }
 .wp-caption { font-style: italic; font-size: 11px; margin-top: 10px; }
 .wp-caption .aligncenter { text-align: center; }
-.wp-caption-text { padding: 0 6px !important; }
+.wp-caption-text { padding: 0 6px; }
 .youtube-player { width: 100%; height: auto; }
 
 h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
@@ -322,8 +322,8 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 
 .title-alt a:hover {
 	background-color: rgba(0,0,0,.5);
-	color: #fff !important;
-	text-decoration: none !important;
+	color: #fff;
+	text-decoration: none;
 }
 
 .title-main {
@@ -814,7 +814,7 @@ div.comment-bacon {
 	.tinynav { display: block; }
 	.navmain, .navmain2 { display: none; }
 	.tinynav_label, .tinynav2_label { float: left; margin: 14px 10px; display: block; font-size: 18px; }
-	.tinynav2_label { margin-top: 2px !important; }
+	.tinynav2_label { margin-top: 2px; }
 	
 	select.tinynav {
 		font-size: 18px;
