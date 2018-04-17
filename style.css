@@ -69,10 +69,6 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   border-radius: 3px;
 }
 
-#s:focus {
-	outline: none;
-}
-
 .bacon-search input {
   width: 80%;
   border: 0;
