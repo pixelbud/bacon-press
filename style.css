@@ -18,9 +18,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-style: normal;
 }
 
-* { outline: none; }
-
-body { background-color: #E5E5E5; color: #444; font-family: 'Open Sans', sans-serif; font-size: 14px; margin: 30px auto 0 auto; width: auto; }
+body { background-color: #fff; color: #444; font-family: 'Open Sans', sans-serif; font-size: 14px; margin: 30px auto 0 auto; width: auto; }
 
 em { font-style: italic; }
 strong { font-weight: 700; }
@@ -67,6 +65,12 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   padding: 6px;
   background: #fff;
   box-sizing: border-box;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+}
+
+#s:focus {
+	outline: none;
 }
 
 .bacon-search input {
@@ -137,7 +141,12 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   margin-bottom: 60px;
 }
 
-.bacon-blog-post-inner { padding: 42px; }
+.bacon-blog-post-inner {
+	padding: 42px;
+	border: 1px solid #CDCDCD;
+	border-top: none;
+	border-radius: 3px;
+}
 
 .bacon-blog-post .wp-post-image {
   width: 100%;
@@ -332,7 +341,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   position: relative;
   width: 100%;
   background: #fff;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
@@ -831,5 +840,9 @@ div.comment-bacon {
 	
 	.garyb { max-width: 320px; width: 100%; }
 	
-	.aligncenter { margin: 0 auto; display: block; width: 100%; height: auto;}
+	.aligncenter { margin: 0 auto; display: block; width: 100%; height: auto;	}
+	
+	.bacon-nav { margin-top: 24px; }
+	
+	.bacon-search { margin: 20px; width: 90%; }
 }

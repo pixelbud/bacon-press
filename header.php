@@ -46,7 +46,7 @@ window['_fs_namespace'] = 'FS';
 <div class="dash-contain group">
 
 	<div class="dash-left">
-		<div class="bacon-nav bacon-shadow">
+		<div class="bacon-nav">
 			<a href="<?php bloginfo('url'); ?>">
 				<picture>
 				<source media="(max-width: 639px)" srcset="<?php bloginfo('stylesheet_directory'); ?>/img/gary_bacon_pixel@2x.png 2x">
