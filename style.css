@@ -508,9 +508,9 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 .port-nav div ul li.medi a:hover { color: #002874; background: #F8F8F8 url('img/port_medi.png') 10px center no-repeat; padding-left: 58px;  border: solid 2px #4A90E2; margin: -1px 9px 9px -1px; }
 
 /* Portfolio home button + back button */
-.port-nav div ul li.port a { color: #002874; background: #fff url('img/icon_arrow_back.png') 14px center no-repeat; text-indent: -10000px; width: 64px; direction: rtl; }
+.port-nav div ul li.port a { color: #002874; background: #fff url('img/icon_arrow_back.png') 14px center no-repeat; text-indent: -10000px; width: 64px; direction: ltr; }
 .port-nav div ul li.port a:hover { width: 66px; border: 2px solid #B21A13; margin: -1px 9px 9px -1px; }
-.port-nav div ul li.port.current-menu-item a { color: #002874; background: #fff url('img/icon_port.png') 14px center no-repeat; text-indent: -10000px; width: 66px; border: 2px solid #B21A13; margin: -1px 9px 9px -1px; direction: rtl; }
+.port-nav div ul li.port.current-menu-item a { color: #002874; background: #fff url('img/icon_port.png') 14px center no-repeat; text-indent: -10000px; width: 66px; border: 2px solid #B21A13; margin: -1px 9px 9px -1px; direction: ltr; }
 .port-nav div ul li.port.current-menu-item a:hover { width: 66px; border: 2px solid #B21A13; margin: -1px 9px 9px -1px; }
 
 /* Active Portfolio page */
