@@ -90,7 +90,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   content: "";
   left: 20px;
   right: 20px;
-  bottom: 0px;
+  bottom: 0;
   z-index: -1;
   box-shadow: 0 0 30px 4px rgba(0,0,0,0.60);
 }
@@ -280,7 +280,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 .dash-block img.wp-post-image {
 	width: 100%;
 	height: auto;
-	border-radius: 3px 3px 0px 0px;
+	border-radius: 3px 3px 0 0;
 }
 
 .dash-block a {
@@ -297,7 +297,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	padding: 8px;
 	font-size: 14px;
 	margin: 20px 10px -20px 10px;
-	border-radius: 2px 2px 0px 0px;
+	border-radius: 2px 2px 0 0;
 	border-top: rgba(255,255,255,.75) solid 1px;
 }
 
@@ -307,7 +307,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 }
 
 .port-radius {
-	border-radius: 0px 0px 2px 2px !important;
+	border-radius: 0 0 2px 2px;
 }
 
 .title-alt a {
@@ -325,29 +325,6 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	color: #fff !important;
 	text-decoration: none !important;
 }
-
-/*
-.sharedaddy .sd-block .sd-social .sd-gplus {
-	border: rgba(0,0,0,.2) solid 1px !important;
-	box-shadow: rgba(0,0,0,.1) 0 1px 0 !important;
-	padding: 6px !important;
-	margin: 10px !important;
-	color: #9B9A9C !important;
-}
-
-.action-row .sharedaddy .sd-block {
-	background-color: #F3F2F4 !important;
-	padding: 10px 0 4px 0 !important;
-	border-top: rgba(0,0,0,.1) solid 1px !important;
-	color: #9B9A9C;
-	margin-top: 10px !important;
-}
-
-.action-row .sharedaddy .sd-title {
-	font-weight: normal !important;
-	padding-left: 10px;
-}
-*/
 
 .title-main {
 	position: relative;
@@ -449,7 +426,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	content: "";
 	left: 20px;
 	right: 20px;
-	bottom: 0px;
+	bottom: 0;
 	z-index: -1;
 	box-shadow: 0 0 30px 4px rgba(0,0,0,0.75);
 }
@@ -474,7 +451,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	padding: 20px 14px 18px 14px;
 	background: #fff;
 	border: 1px solid #D8D8D8;
-	box-shadow: 0px 1px 0px 0px #D8D8D8;
+	box-shadow: 0 1px 0 0 #D8D8D8;
 	border-radius: 3px;
 	font-size: 22px;
 	text-decoration: none;
@@ -483,7 +460,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 }
 
 .port-nav div ul li:last-child a {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .port-contain {
@@ -558,8 +535,8 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 .port-sub div ul li ul.sub-menu li, .port-sub div ul li ul.sub-menu li a { display: block; }
 .port-sub div ul li ul.sub-menu li a { margin: 0 0 10px 10px; padding: 10px; background-color: #fff; float: left; border-radius: 2px; text-decoration: none; color: #444; }
 .port-sub div ul li ul.sub-menu li a:hover { background-color: #F8F8F8; color: #333; border: 2px solid #4A90E2; margin: -2px -2px 9px 8px; box-sizing: border-box;}
-.port-sub div ul li ul li.current-menu-item a { border: 2px solid #4A90E2; margin: -2px 0px 9px 9px;}
-.port-sub div ul li ul li.current-menu-item a:hover { border: 2px solid #4A90E2; margin: -2px 0px 9px 9px;}
+.port-sub div ul li ul li.current-menu-item a { border: 2px solid #4A90E2; margin: -2px 0 9px 9px;}
+.port-sub div ul li ul li.current-menu-item a:hover { border: 2px solid #4A90E2; margin: -2px 0 9px 9px;}
 
 .footer {
 	display: inline-block;
@@ -817,7 +794,7 @@ div.comment-bacon {
 .bookies {
 	margin-right: 20px;
 	margin-bottom: 20px;
-	box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
 	box-shadow:1px 1px 25px 17px black
 	padding: 3px;
 }
