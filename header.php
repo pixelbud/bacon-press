@@ -46,8 +46,6 @@ window['_fs_namespace'] = 'FS';
 <div class="dash-contain group">
 
 	<div class="dash-left">
-		<h1><a href="<?php bloginfo('url'); ?>" class="title-main bacon-shadow">Gary Bacon</a></h1>
-
 		<div class="bacon-nav bacon-shadow">
 			<a href="<?php bloginfo('url'); ?>">
 				<picture>
