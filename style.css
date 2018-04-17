@@ -725,7 +725,7 @@ div.bacon-post a.read-more-bacon:hover {
 	color: #444;
 	}
 	
-div.comment-bacon {
+.comment-bacon {
 	margin-top: 20px;
 	}
 	
@@ -810,6 +810,8 @@ div.comment-bacon {
 		border: none;
 		margin: 12px 0 10px 0;
 		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
 	}
 	
 	.port-block { margin-right: 10px; }
