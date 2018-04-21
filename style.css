@@ -50,7 +50,7 @@ strong { font-weight: 700; }
 .wp-caption { font-style: italic; font-size: 11px; margin-top: 10px; }
 .wp-caption .aligncenter { text-align: center; }
 .wp-caption-text { padding: 0 6px; }
-.youtube-player { width: 100%; height: auto; }
+.youtube-player { width: 100%; }
 
 h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 
