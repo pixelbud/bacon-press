@@ -768,7 +768,7 @@ div.bacon-post a.read-more-bacon:hover {
 /* Media Queries */
 
 @media screen and (max-width: 639px) {
-	body { margin: 0; }
+	body { margin: 0 20px; }
 
 	.dash-left { max-width: none; }
 	.dash-nav { margin: 0 10px 10px 10px; }
@@ -799,6 +799,11 @@ div.bacon-post a.read-more-bacon:hover {
 	}
 
 	.bacon-social-box { display: none; }
+
+	.aligncenter {
+		width: 80%;
+		height: auto;
+	}
 }
 
 @media screen and (max-width: 375px) {
@@ -819,5 +824,4 @@ div.bacon-post a.read-more-bacon:hover {
 
 	.bacon-nav { margin-top: 24px; }
 
-	.bacon-search { margin: 20px; width: 90%; }
 }

@@ -60,7 +60,7 @@
 	</div>
 	<?php // Close Dash Left ?>
 	<div class="dash-main">
-		<?php if ( !is_page() ) { ?>
+		<?php if ( !is_page() and has_nav_menu( 'blog-nav' ) ) { ?>
 				<div class="blog-nav">
 					<?php wp_nav_menu( array( 'theme_location' => 'blog-nav' ) ); ?>
 				<div class="blog-nav">
