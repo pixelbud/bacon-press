@@ -18,7 +18,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-style: normal;
 }
 
-body { background-color: #fff; color: #444; font-family: 'Open Sans', sans-serif; font-size: 14px; margin: 30px auto 0 auto; width: auto; }
+body { background-color: #DDDDDD; color: #444; font-family: 'Open Sans', sans-serif; font-size: 14px; margin: 30px auto 0 auto; width: auto; }
 
 em { font-style: italic; }
 strong { font-weight: 700; }
@@ -42,7 +42,7 @@ strong { font-weight: 700; }
 	color: #444;
 }
 
-.garyb { display: block; width: auto; height: auto; margin: 0 auto 20px auto; }
+.garyb { display: block; width: auto; height: auto; margin: 10px auto 20px auto; }
 
 .aligncenter { margin: 0 auto; display: block; }
 .alignright { float: right; }
@@ -54,7 +54,23 @@ strong { font-weight: 700; }
 
 h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 
+/* Navigation Menu Styling */
+
 .menu-about-the-bacon-container .current-menu-item a { font-weight: 700; color: #B21A13; }
+
+.menu-blog-container { margin: 0 auto 20px auto; text-align: center;}
+.menu-blog-container ul li { list-style: none; display: inline-block; margin-right: -8px; margin-bottom: 8px; }
+.menu-blog-container ul li a {
+	display: inline-block;
+	background-color: #FFFF0C;
+	text-decoration: none;
+	padding: 8px 16px;
+	color: #000;
+	border: 3px solid #000;
+	box-shadow: inset 0 -3px #FF9912;
+}
+
+
 
 /* Search Formatting */
 
@@ -62,11 +78,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   position: relative;
   margin: 0 auto 20px auto;
   width: 100%;
-  padding: 6px;
-  background: #fff;
-  box-sizing: border-box;
-  border: 1px solid #CDCDCD;
-  border-radius: 3px;
+	padding: 8px;
 }
 
 .bacon-search input {
@@ -74,8 +86,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   border: 0;
   font-size: 18px;
   color: #444;
-  padding: 0 12px 0 2px;
-  margin: 10px;
+  padding: 7px 16px 8px 16px;
 }
 
 .bacon-search .fa-search {
@@ -139,14 +150,12 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 
 .bacon-blog-post-inner {
 	padding: 42px;
-	border: 1px solid #CDCDCD;
-	border-top: none;
-	border-radius: 3px;
 }
 
 .bacon-blog-post .wp-post-image {
   width: 100%;
   height: auto;
+	border-bottom: 3px solid #000;
 }
 
 .bacon-blog-post h1, .bacon-blog-post h2, .bacon-blog-post h3, .bacon-blog-post h4 {
@@ -162,13 +171,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   text-decoration: none;
 }
 
-.bacon-blog-post h1 {
-  margin-top: 0;
-  font-size: 3.157em;
-}
-
-.bacon-blog-post h2 { margin-top: 0; font-size: 2.369em;}
-.bacon-blog-post h3 {font-size: 1.777em;}
+.bacon-blog-post h1, .bacon-blog-post h2, .bacon-blog-post h3 { margin-top: 0; font-size: 1.777em;}
 .bacon-blog-post h4 {font-size: 1.333em;}
 .bacon-blog-post small, .bacon-blog-post .font_small {font-size: 0.75em;}
 
@@ -337,14 +340,9 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   position: relative;
   width: 100%;
   background: #fff;
-  padding: 0 20px;
+  padding: 8px 20px 10px 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
-}
-
-.bacon-nav ul {
-  display: inline-block;
-  width: 100%;
 }
 
 .bacon-nav ul a {
@@ -385,7 +383,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 .bacon-blog-nav .current-cat a, .bacon-blog-nav .current-cat-parent a, .bacon-blog-nav .children .current-cat a {
 	color: #DB2B25;
 	}
-	
+
 .bacon-blog-nav .children a {
 	color: #444;
 }
@@ -493,7 +491,7 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	color: #B21A13;
 	text-decoration: none;
 	}
-	
+
 .port-block a:hover {
 	text-decoration: underline;
 }
@@ -551,82 +549,61 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	transform: scale(1.2);
 }
 
-.bacon-social-box {
-	position: relative;
-	width: 211px;
-	margin: 0 auto;
+.bacon-pixel-box {
+	background: #fff;
+	box-sizing: border-box;
+	border: 3px solid #000000;
+	box-shadow: inset 0 -3px #DEDDDE;
 }
 
-.b-fb {
-	background: #4862A3;
-	padding: 10px 19px;  
+.bacon-social-box {
+	position: relative;
+	min-width: 211px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 8px;
 }
 
 .b-twitter {
-	background: #55ACEE;
-	padding: 10px 14px;
-}
-
-.b-youtube {
-	background: #fff;
-	color: #E42D2A;
-	padding: 10px 14px;
+	color: #55ACEE;
+	padding: 8px;
 }
 
 .b-linkedin {
-	background: #0077B5;
-}
-
-.b-rss {
-	background: #FF8823;
-	padding: 10px 17px 10px 16px;
+	color: #0077B5;
+	padding: 8px;
 }
 
 .b-github {
-	background: #fff;
 	color: #000;
-	padding: 10px 14px;
+	padding: 8px;
 }
 
 .b-dribbble {
-	background: #E84F89;
-}
-
-.b-env {
-	background: #fff;
-	color: #5C5C5C;
-	padding: 10px 14px;
+	color: #E84F89;
+	padding: 8px
 }
 
 .b-codepen {
-	background: #000;
-	color: #fff;
-	padding: 10px 14px;
+	color: #000;
+	padding: 8px;
 }
 
 .b-instagram {
-background:
-    radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-  padding: 10px 15px 10px 16px;  
+color: #B04275;
+padding: 8px;
 }
 
 .b-snapchat {
-	background: #FFFC00;
+	color: #FFFC00;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #000;
 	padding: 10px 15px;
 }
 
 .b-medium {
-	background: #00AB6C;
-	padding: 10px 14px 10px 13px;
+	color: #00AB6C;
+	padding: 8px;
 }
 
 .b-angellist {
@@ -649,7 +626,7 @@ background:
 	text-decoration: none;
 	text-shadow: none;
 	}
-	
+
 ::-moz-selection {
 	color: #eee;
 	background: #444;
@@ -658,9 +635,9 @@ background:
 	}
 
 /* Legacy */
-	
+
 div.filed {
-	float: left; 
+	float: left;
 	background: #e3e3e3;
 	padding: 13px 12px 11px 12px;
 	border-radius: 6px;
@@ -668,7 +645,7 @@ div.filed {
 	border-bottom: #fff solid 1px;
 	font-size: 12px;
 	}
-	
+
 div.filed a {
 	color: #444;
 	text-shadow: none;
@@ -679,7 +656,7 @@ div.filed a:hover {
 	color: #DB2B25;
 	text-shadow: none;
 	}
-	
+
 div.bacon-post a.read-more-bacon {
 	float: left;
 	color: #fff;
@@ -692,43 +669,43 @@ div.bacon-post a.read-more-bacon {
 	background-color: #DB2B25;
 	text-shadow: 0 1px 0 rgba(0,0,0,.5);
 	}
-	
+
 div.bacon-post a.read-more-bacon:hover {
 	border-bottom: #6C0D04 solid 1px;
 	margin-top: 2px;
 	}
-	
+
 .screen-reader-text {
 	display: none;
 	}
-	
-	
+
+
 #post-nav {
 	width: 100%;
 	margin: 30px 0;
 	}
 
-#post-nav a { 
+#post-nav a {
 	padding: 10px;
 	background-color: #fff;
 	color: #A39A9C;
 	text-decoration: none;
 	transition: all 0.2s ease;
 	}
-	
+
 #post-nav a:hover {
 	background-color: #888888;
 	color: #fff;
 }
-	
+
 #idc-container a {
 	color: #444;
 	}
-	
+
 .comment-bacon {
 	margin-top: 20px;
 	}
-	
+
 .dash-block { margin: 10px; }
 
 .tinynav, .tinynav_label { display: none; }
@@ -792,18 +769,18 @@ div.bacon-post a.read-more-bacon:hover {
 
 @media screen and (max-width: 639px) {
 	body { margin: 0; }
-		
+
 	.dash-left { max-width: none; }
 	.dash-nav { margin: 0 10px 10px 10px; }
 	.dash-main { max-width: none; }
 	.social-icons { display: none; }
 	.footer { text-align: left; box-sizing: border-box; }
-	
+
 	.tinynav { display: block; }
 	.navmain, .navmain2 { display: none; }
 	.tinynav_label, .tinynav2_label { float: left; margin: 14px 10px; display: block; font-size: 18px; }
 	.tinynav2_label { margin-top: 2px; }
-	
+
 	select.tinynav {
 		font-size: 18px;
 		background-color: #D5D5D6;
@@ -813,14 +790,14 @@ div.bacon-post a.read-more-bacon:hover {
 		-moz-appearance: none;
 		appearance: none;
 	}
-	
+
 	.port-block { margin-right: 10px; }
-	
+
 	.book-list {
 	flex-direction: column;
 	align-items: center;
 	}
-	
+
 	.bacon-social-box { display: none; }
 }
 
@@ -835,12 +812,12 @@ div.bacon-post a.read-more-bacon:hover {
 	.bacon-blog-post h2 {
 		font-size: 1.9em;
 	}
-	
+
 	.garyb { max-width: 320px; width: 100%; }
-	
+
 	.aligncenter { margin: 0 auto; display: block; width: 100%; height: auto;	}
-	
+
 	.bacon-nav { margin-top: 24px; }
-	
+
 	.bacon-search { margin: 20px; width: 90%; }
 }

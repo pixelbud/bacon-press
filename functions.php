@@ -6,10 +6,10 @@ function custom_scripts() {
 	wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery', 'http://code.jquery.com/jquery-1.11.0.min.js', false, '1.11.0', true );
 	wp_enqueue_script( 'jquery' );
-	
+
 	wp_register_script( 'tinynav', get_template_directory_uri() . '/js/tinynav.min.js', false, false, true );
 	wp_enqueue_script( 'tinynav' );
-	
+
 	wp_register_script( 'twitter-render', 'https://platform.twitter.com/widgets.js', false, false, true );
 	wp_enqueue_script( 'twitter-render' );
 
@@ -21,12 +21,12 @@ add_action( 'wp_enqueue_scripts', 'custom_scripts' );
 // Make theme available for translation
 // Translations can be filed in the /languages/ directory
 load_theme_textdomain( 'bacon-press', TEMPLATEPATH . '/languages' );
- 
+
 $locale = get_locale();
 $locale_file = TEMPLATEPATH . "/languages/$locale.php";
 if ( is_readable($locale_file) )
  require_once($locale_file);
- 
+
 // Get the page number
 function get_page_number() {
     if ( get_query_var('paged') ) {
@@ -35,8 +35,8 @@ function get_page_number() {
 } // end get_page_number
 
 // Add feature-image support
-if ( function_exists( 'add_theme_support' ) ) { 
-  add_theme_support( 'post-thumbnails' ); 
+if ( function_exists( 'add_theme_support' ) ) {
+  add_theme_support( 'post-thumbnails' );
 }
 
 // Remove JPEG Compression
@@ -61,7 +61,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 function register_my_menus() {
   register_nav_menus(
-    array('main-nav' => __( 'Main Nav' ), 'social-nav' => __( 'Social Nav' ),  'port-nav' => __( 'Portfolio Nav' ) )
+    array('main-nav' => __( 'Main Nav' ), 'social-nav' => __( 'Social Nav' ),  'port-nav' => __( 'Portfolio Nav' ), 'blog-nav' => __( 'Blog Nav' ) )
   );
 }
 add_action( 'init', 'register_my_menus' );
@@ -140,7 +140,7 @@ add_action('wp_head', 'fbogmeta_header');
 function cf_search_join( $join ) {
     global $wpdb;
 
-    if ( is_search() ) {    
+    if ( is_search() ) {
         $join .=' LEFT JOIN '.$wpdb->postmeta. ' ON '. $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
     }
 

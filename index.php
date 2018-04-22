@@ -1,25 +1,25 @@
 <?php
 	get_header();
-		if ( is_home() ) { query_posts($query_string . "&cat=-" . thePortGrab() ); /* thePortGrab pulls the ID for Portfolio Category */ }		
+		if ( is_home() ) { query_posts($query_string . "&cat=-" . thePortGrab() ); /* thePortGrab pulls the ID for Portfolio Category */ }
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 	?>
-		
-		<div class="bacon-blog-post bacon-shadow">
+
+		<div class="bacon-blog-post bacon-pixel-box bacon-shadow">
 			<?php if ( has_post_thumbnail() ) { /* check if the post has a Post Thumbnail assigned to it. */ ?>
 				<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>"><?php the_post_thumbnail( array ( 427,999 ) ); ?></a>
 				<div class="bacon-blog-post-inner">
 					<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>" class="title-row"><?php the_title(); ?></a></h2>
 			<?php } else { ?>
-			
+
 				<div class="bacon-blog-post-inner">
 					<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				<?php
 				}
 					the_content('');
 					wp_link_pages();
-					
+
 				?>
-			
+
 			<?php if ( count( get_the_category() ) ) :
 				if ( !is_single() ) { ?>
 				<div class="action-row group">
@@ -39,29 +39,29 @@
 			<?php
 				}
 			?>
-				
+
 	<?php endif; ?>
-			
+
 			<?php /* comments_template(); */ ?>
-			
+
 			</div><?php // Close Post Inner ?>
 		</div><?php // Close Post ?>
-			
-			
+
+
 			<?php if ( is_page() ) { ?>
 				</div><?php // Close Post Inner ?>
 				</div><?php // Close Post ?>
 			<?php } ?>
-		
+
 
 		<?php endwhile;
-		
+
 		if ( $wp_query->max_num_pages > 1 ) : ?>
 			<div id="post-nav" class="navigation group">
 				<div class="nav-previous alignleft"><?php next_posts_link( __( 'Older posts', 'bacon-press' ) ); ?></div>
 				<div class="nav-next alignright"><?php previous_posts_link( __( 'Newer posts', 'bacon-press' ) ); ?></div>
 			</div><?php // Post Nav ?>
-			
+
 		<?php endif; ?>
 
 		<?php else: ?>
@@ -78,12 +78,9 @@
 			</div>
 			</div>
 		</div>
-		
+
 		<?php endif; ?>
-		
+
 	</div><?php // Close Main ?>
 </div><?php // Close Container ?>
 <?php get_footer(); ?>
-	
-
-	

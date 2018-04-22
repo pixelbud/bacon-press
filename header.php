@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<title><?php
-        if ( is_single() ) { single_post_title(); }      
+        if ( is_single() ) { single_post_title(); }
         elseif ( is_home() || is_front_page() ) { bloginfo('name'); print ' - '; bloginfo('description'); get_page_number(); }
         elseif ( is_page() ) { single_post_title(''); }
         elseif ( is_search() ) { bloginfo('name'); print ' | Search results for ' . wp_specialchars($s); get_page_number(); }
@@ -41,7 +41,7 @@
 <div class="dash-contain group">
 
 	<div class="dash-left">
-		<div class="bacon-nav">
+		<div class="bacon-nav bacon-pixel-box bacon-shadow">
 			<a href="<?php bloginfo('url'); ?>">
 				<picture>
 				<source media="(max-width: 639px)" srcset="<?php bloginfo('stylesheet_directory'); ?>/img/gary_bacon_pixel@2x.png 2x">
@@ -49,14 +49,19 @@
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/gary_bacon_pixel.png" alt="<?php bloginfo('name'); ?>" class="garyb"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
 		</div>
-		
+
 		<?php get_search_form(); ?>
-		
+
 		<?php // Social Icons ?>
-		<div class="bacon-social-box bacon-shadow">
+		<div class="bacon-social-box bacon-pixel-box bacon-shadow">
 			<a href="http://twitter.com/pixelbud" title="Twitter" class="bacon-social b-twitter"><i class="fa fa-twitter"></i></a><a href="http://linkedin.com/in/pixelbud" title="LinkedIn" class="bacon-social b-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://github.com/pixelbud" title="Github" class="bacon-social b-github" target="_blank"><i class="fa fa-github-alt"></i></a><a href="https://dribbble.com/pixelbud" title="Dribbble" class="bacon-social b-dribbble" target="_blank"><i class="fa fa-dribbble"></i></a><a href="http://codepen.io/bacon/" title="Codepen" class="bacon-social b-codepen" target="_blank"><i class="fa fa-codepen"></i></a><a href="https://www.instagram.com/pixelbud/" title="Instagram" class="bacon-social b-instagram"><i class="fa fa-instagram"></i></a><a href="https://medium.com/@pixelbud" title="Medium" class="bacon-social b-medium"><i class="fa fa-medium"></i></a><a href="https://www.snapchat.com/add/pixelbud" title="Snapchat" class="bacon-social b-snapchat"><i class="fa fa-snapchat-ghost"></i></a>
 		</div>
-		
+
 	</div>
 	<?php // Close Dash Left ?>
 	<div class="dash-main">
+		<?php if ( !is_page() ) { ?>
+				<div class="blog-nav">
+					<?php wp_nav_menu( array( 'theme_location' => 'blog-nav' ) ); ?>
+				<div class="blog-nav">
+		<?php }; ?>
