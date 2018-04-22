@@ -181,3 +181,13 @@ function cf_search_distinct( $where ) {
     return $where;
 }
 add_filter( 'posts_distinct', 'cf_search_distinct' );
+
+/**
+ * Strip whitespace from the menus
+ * https://gist.github.com/jeremyfelt/2353300
+**/
+
+function prefix_remove_menu_item_whitespace( $items ) {
+    return preg_replace( '/>(\s|\n|\r)+</', '><', $items );
+}
+add_filter( 'wp_nav_menu_items', 'prefix_remove_menu_item_whitespace' );
