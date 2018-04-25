@@ -52,8 +52,6 @@ strong { font-weight: 700; }
 .wp-caption-text { padding: 0 6px; }
 .youtube-player { width: 100%; }
 
-h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
-
 /* Navigation Menu Styling */
 
 .menu-about-the-bacon-container .current-menu-item a { font-weight: 700; color: #B21A13; }
@@ -95,7 +93,23 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	margin-bottom: 3px;
 }
 
-.menu-blog-container ul li a:hover, .menu-blog-container ul li.current-menu-item a {
+.gform_button {
+  box-sizing: border-box;
+	display: inline-block;
+  -webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+  background-color: #FFFF0C;
+  padding: 8px 16px 10px 16px;
+  color: #000;
+  border: 3px solid #000;
+  box-shadow: inset 0 -3px #FF9912;
+  font-size: 16px;
+}
+
+.menu-blog-container ul li a:hover, .menu-blog-container ul li.current-menu-item a, .gform_button:hover {
 
 	display: block;
 	box-shadow: inset 0 -3px #000;
@@ -103,8 +117,12 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
 	background: #F1F10B;
 }
 
-.menu-blog-container ul li:first-child a {
-	border-left: none;
+.gform_button:hover {
+  box-shadow: none;
+}
+
+.gform_button:hover {
+  box-shadow: none;
 }
 
 /* Search Formatting */
@@ -206,8 +224,8 @@ h3 { font-size: 24px; line-height: 46px; font-weight: 700; }
   text-decoration: none;
 }
 
-.bacon-blog-post h1, .bacon-blog-post h2, .bacon-blog-post h3 { margin-top: 0; font-size: 1.777em;}
-.bacon-blog-post h4 {font-size: 1.333em;}
+.bacon-blog-post h1, .bacon-blog-post h2 { margin-top: 0; font-size: 1.777em;}
+.bacon-blog-post h3, .bacon-blog-post h4 {font-size: 1.333em;}
 .bacon-blog-post small, .bacon-blog-post .font_small {font-size: 0.75em;}
 
 .bacon-blog-post p {

@@ -4,31 +4,31 @@ Template Name: Book Listings
 */
 
 get_header(); ?>
-<div class="bacon-blog-post bacon-shadow">
+<div class="bacon-blog-post bacon-pixel-box bacon-shadow">
 	<?php if ( has_post_thumbnail() ) { /* check if the post has a Post Thumbnail assigned to it. */ ?>
 				<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>"><?php the_post_thumbnail( array ( 427,999 ) ); ?></a>
 				<div class="bacon-blog-post-inner">
 					<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>" class="title-row"><?php the_title(); ?></a></h2>
 			<?php } else { ?>
-			
+
 				<div class="bacon-blog-post-inner">
 					<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				<?php
 				}
-				
+
 				while ( have_posts() ) : the_post();
-					
+
 					the_content('');
-					
+
 					?>
-					
+
 					<?php
 
 					if( have_rows('book_listing') ): ?>
-					
+
 					<h3>Books Completed (<?php $booknum = count(get_field('book_listing')); echo($booknum); ?>)</h3>
 					<p>These are the books I’ve completed reading so far this year. Favorite books are denoted by a &starf;</p>
-					
+
 							<?php while( have_rows('book_listing') ): the_row(); ?>
 							<div class="book-list">
 								<?php
@@ -47,12 +47,12 @@ get_header(); ?>
 					<?php endwhile; ?>
 					<?php endif;
 					wp_link_pages();
-					
+
 				endwhile;
-					
+
 				?>
 			</div><?php // Close Post Inner ?>
-		</div><?php // Close Post ?>				
+		</div><?php // Close Post ?>
 	</div><?php // Close Main ?>
 </div><?php // Close Container ?>
 <?php get_footer(); ?>
